@@ -41,7 +41,7 @@ function LandingPage() {
         <h1 className='flex flex-col lg:flex-row items-center justify-center gradient-title text-4xl  sm:text-6xl lg:text-8xl tracking-tighter py-4 font-extrabold  '>Find Your Dream <span className='flex items-center gap-1 lg:gap-6'> <img src="/logo.png" alt="job" className='h-12 sm:h-24 lg:h-32'/></span></h1>
         <p className='text-gray-300 sm:mt-4 text-xs sm:text-xl'>Explore thousands of job listings or find the perfect candidate</p>
       </section>
-      <div className='flex gap-6 justify-center'>
+      <div className='flex flex-col sm:flex-row gap-6 justify-center items-center'>
         {/* Buttons */}
         {/* <Link to={(user?.unsafeMetadata?.role==='candidate'?"/jobs" :"/")||"/jobs"}> */}
         <Link to={"/jobs"} onClick={(e)=>handleClick(e,'candidate')}>
