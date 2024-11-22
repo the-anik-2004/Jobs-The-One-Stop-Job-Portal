@@ -22,13 +22,13 @@ const Header = () => {
   }
   return (
     <>
-      <nav className="py-4 flex justify-between items-center">
+      <nav className="py-2 px-0 flex justify-between items-center">
         <Link>
           <img src="/logo.png" className="h-20" alt="" />
         </Link>
         
         
-        <div className='flex gap-8'>
+        <div className='flex gap-2'>
           <SignedOut>
             <Button variant="outline" onClick={()=>setShowSignIn(true)}>Login</Button>
           </SignedOut>
