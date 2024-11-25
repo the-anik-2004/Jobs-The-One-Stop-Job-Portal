@@ -69,7 +69,8 @@ const Header = () => {
       {
         showSignIn && <div className="flex fixed inset-0 items-center justify-center bg-black bg-opacity-80 z-10" onClick={handleOverlayClick}>
           <SignIn 
-          signUpForceRedirectUrl="/onboarding"
+          forceRedirectUrl='/onboarding'
+          //signUpForceRedirectUrl="/onboarding"
           fallbackRedirectUrl='/onboarding'
           />
         </div>
