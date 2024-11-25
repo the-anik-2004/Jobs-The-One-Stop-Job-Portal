@@ -69,9 +69,9 @@ const Header = () => {
       {
         showSignIn && <div className="flex fixed inset-0 items-center justify-center bg-black bg-opacity-80 z-10" onClick={handleOverlayClick}>
           <SignIn 
-          forceRedirectUrl='/onboarding'
-          //signUpForceRedirectUrl="/onboarding"
-          fallbackRedirectUrl='/onboarding'
+          forceRedirectUrl="https://jobsthe-one-stop-job-portal.vercel.app/onboarding"
+          signUpForceRedirectUrl="https://jobsthe-one-stop-job-portal.vercel.app/onboarding"
+          fallbackRedirectUrl="https://jobsthe-one-stop-job-portal.vercel.app/onboarding"
           />
         </div>
       }
