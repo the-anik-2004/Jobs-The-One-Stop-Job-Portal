@@ -1,5 +1,3 @@
-'use client'
-
 import { useUser } from '@clerk/clerk-react'
 import React, { useEffect } from 'react'
 import { Button } from '../components/ui';
