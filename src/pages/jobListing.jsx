@@ -38,7 +38,7 @@ function JobListing() {
       setLocation("");
   }
 
-  const jobsPerPage=12;
+  const jobsPerPage=9;
   const startIndex = (page - 1) * jobsPerPage;
   const endIndex = startIndex + jobsPerPage;
 
@@ -166,7 +166,7 @@ function JobListing() {
       {[...Array(totalPage)].map((_, index) => {
             return (
               <Button 
-                className={page === index+1 ? "bg-blue-700 text-white rounded-full" : "" + "rounded-full "}
+                className={page === index+1 ? "bg-blue-600 text-white rounded-lg hover:bg-blue-800" : "" + "rounded-full "}
                 onClick={() => {
                   selectPageHandler(index + 1);
                 }}

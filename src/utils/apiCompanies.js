@@ -1,4 +1,3 @@
-import { SupabaseAuthClient } from "@supabase/supabase-js/dist/module/lib/SupabaseAuthClient";
 import supabaseClient ,{supabaseUrl}from "./superbase";  // Ensure correct file path
 
 export async function getCompanies(token) {
