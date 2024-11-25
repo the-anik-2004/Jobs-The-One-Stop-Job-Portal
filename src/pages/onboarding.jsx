@@ -50,4 +50,4 @@ function OnBoarding() {
   
 }
 
-export default OnBoarding
+export default OnBoarding;
