@@ -6,6 +6,7 @@ import ApplyJobDrawer from "./apply-job";
 import ApplicationCard from "./applicationCard";
 import CreatedApplications from "./CreatedApplications";
 import CreatedJobs from "./CreatedJobs";
+import Footer from "./Footer";
 
 export {
     Header,
@@ -14,5 +15,6 @@ export {
     JobCard,ApplyJobDrawer,
     ApplicationCard,
     CreatedApplications,
-    CreatedJobs
+    CreatedJobs,
+    Footer
 }
