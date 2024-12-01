@@ -17,13 +17,13 @@ export function Toaster() {
         return (
           (<Toast
            key={id} {...props} className=" shadow-sm shadow-slate-50"
-           style={{
-            width:"350px",
-            position: 'fixed',
-            bottom: '8px', // Adjust the bottom spacing
-            right: '4px', // Adjust the right spacing
-            zIndex: 9999, // Ensure it stays on top of other content
-          }}
+          //  style={{
+          //   width:"350px",
+          //   position: 'fixed',
+          //   bottom: '8px', // Adjust the bottom spacing
+          //   right: '4px', // Adjust the right spacing
+          //   zIndex: 9999, // Ensure it stays on top of other content
+          // }}
            >
             <div className="grid gap-1">
               {title && <ToastTitle>{title}</ToastTitle>}
