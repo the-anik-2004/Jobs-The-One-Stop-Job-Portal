@@ -11,8 +11,8 @@ function AppLayout() {
           <Header/>
           <Outlet/>
         </main>
-        <Toaster />
        <Footer/>
+        <Toaster />
 
     </div>
   )
