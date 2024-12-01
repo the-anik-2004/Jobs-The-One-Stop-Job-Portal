@@ -1,5 +1,5 @@
 import React,{useRef} from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { Button,Carousel,Card } from '../components/ui'
 import companies from "../data/companies.json"
 import faqs from "../data/faq.json"
@@ -7,7 +7,7 @@ import { CarouselItem,CarouselContent } from '@/components/ui/carousel'
 import { CardContent,CardHeader,CardDescription,CardTitle} from '@/components/ui/card'
 import Autoplay from "embla-carousel-autoplay"
 import {useUser} from "@clerk/clerk-react"
-
+import { Navigate } from 'react-router-dom'
 import {
   Accordion,
   AccordionContent,
@@ -28,8 +28,15 @@ function LandingPage() {
     }
     return null;
   };
+
   const userRole=getRole()
+
+
+  if (isSignedIn && userRole === undefined) {
+    return <Navigate to="/onboarding" />;
+  }
  
+
   const handleClick=(event,roleAllowed)=>{
       if(isSignedIn && userRole!==roleAllowed){
         event.preventDefault();

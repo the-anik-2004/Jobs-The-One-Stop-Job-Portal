@@ -11,14 +11,10 @@ const ProtectedRoute = ({ children }) => {
         return <Navigate to="/?sign-in=true" />;
     }
 
-    
     // Redirect signed-in users without a 'role' metadata to the onboarding page
     if (isSignedIn && !user?.unsafeMetadata?.role && pathname !== "/onboarding") {
         return <Navigate to="/onboarding" />;
     }
-
-       // Redirect newly signed-up users to the onboarding page
-     
 
     // If all conditions are met, render the children components
     return children;
